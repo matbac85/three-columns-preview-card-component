@@ -1,0 +1,170 @@
+/* CSS RESET  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  /* line-height: 1.5; */
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* MY CSS */
+
+:root {
+  --primary-400: hsl(31, 77%, 52%);
+  --secondary-400: hsl(184, 100%, 22%);
+  --secondary-800: hsl(179, 100%, 13%);
+  --neutral-200: hsl(0, 0%, 95%);
+  --neutral-100: hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--neutral-100);
+  padding: 5.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 57.5rem;
+  border-radius: 0.5rem;
+}
+
+article {
+  padding: 3rem;
+}
+
+img {
+  margin-bottom: 2.1875rem;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: var(--neutral-200);
+  margin-bottom: 1.5625rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--neutral-100);
+  margin-bottom: clamp(1.563rem, 5.446vw + 0.286rem, 5.188rem);
+}
+
+p,
+.button {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5625rem;
+}
+
+#article-sedans {
+  background-color: var(--primary-400);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#article-sedans .button {
+  color: var(--primary-400);
+}
+
+#article-sedans .button:hover {
+  background-color: var(--primary-400);
+  color: white;
+}
+
+#article-suvs {
+  background-color: var(--secondary-400);
+}
+
+#article-suvs .button {
+  color: var(--secondary-400);
+}
+
+#article-suvs .button:hover {
+  background-color: var(--secondary-400);
+  color: white;
+}
+
+#article-luxury {
+  background-color: var(--secondary-800);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+#article-luxury .button {
+  color: var(--secondary-800);
+}
+
+#article-luxury .button:hover {
+  background-color: var(--secondary-800);
+  color: white;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: var(--neutral-200);
+  text-decoration: none;
+  border-radius: 1.5625rem;
+  border: solid 2px transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  border: solid 2px white;
+}
+
+@media (min-width: 48rem) {
+  main {
+    display: flex;
+  }
+
+  #article-luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  #article-sedans {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
