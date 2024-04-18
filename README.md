@@ -1,1 +1,1 @@
-A new little [Front End Mentor challenge](https://matbac85.github.io/THREE_COLUMNS_PREVIEW_CARD_COMPONENT/) to find here.
+A new little [Front End Mentor challenge](https://matbac85.github.io/three_columns_preview_card_component/) to find here.
